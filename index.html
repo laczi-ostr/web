@@ -1,85 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Poles Contracts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
-<html>
-<head>
-    <title>Blog laczi.ostr</title>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 13;
-            padding: 0;
-            overflow: hidden;
-            background-color: black;
-        }
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-        li {
-            float: left;
-        }
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
 
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
+  </head>
+  <body>
+      <!-- Messenger Wtyczka czatu Code -->
+      <div id="fb-root"></div>
 
-                li a:hover {
-                    background-color: #111;
-                }
-        header {
-            background: black;
-            border-bottom: solid 1px;
-            width: 100%;
-            text-align: center;
-            padding-top: 2px;
-            padding-bottom: 2px;
-        }
-        footer {
-            border-top: solid 1px;
-            background: rgba(150, 150, 150, 0.5);
-            width: 100%;
-            height: 40px;
-            padding-top: 10px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            text-align: center;
-        }
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            font-family: "Times New Roman", Times, serif;
-            font-size: 20px;
-        }
-        main {
-            padding-top: 5px;
-            padding-left: 100px;
-            padding-right: 100px;
-            padding-bottom: 60px;
-        }
+      <!-- Your Wtyczka czatu code -->
+      <div id="fb-customer-chat" class="fb-customerchat">
+      </div>
 
-    </style>
-</head>
-<body>                                                                                              <!--    body -->
-                    <!-- menu -->
-                   <header>
-                    <ul>
-                        <li><a><strong>LACZI</strong></a></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="about.html">About</a></li>
-                        
-                    </ul>
-                    </header>
-    <main>
-                <article>
-                    <h1 style="text-align:center;">Welcome</h1>
-                    <p style="text-align:center;">Hi to all and welcomeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaa</p>
-                </article>
-    </main>
-</body>
-<footer><strong>Laczi.Ostr</strong> </footer> 
+      <script>
+          var chatbox = document.getElementById('fb-customer-chat');
+          chatbox.setAttribute("page_id", "104911411837932");
+          chatbox.setAttribute("attribution", "biz_inbox");
+      </script>
 
+      <!-- Your SDK code -->
+      <script>
+          window.fbAsyncInit = function () {
+              FB.init({
+                  xfbml: true,
+                  version: 'v13.0'
+              });
+          };
+
+          (function (d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+              fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v12.0" nonce="c2Ibhjrt"></script>
+      <div class="wrap">
+          <div class="container">
+              <div class="row justify-content-between">
+
+
+                  <!--phone number on top -->
+                  <div class="col-12 col-md d-flex align-items-center">
+                      <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="tel:07702014783">07702014783</a> or <span class="mailus">email us:</span> <a href="#">paul@polescontracts.com</a></p>
+                  </div>
+                  <div class="col-12 col-md d-flex justify-content-md-end">
+                      <div class="social-media">
+                          <p class="mb-0 d-flex">
+                              <a href="https://www.facebook.com/PolesContracts" class="d-flex align-items-center justify-content-center">
+                                  <span class="fa fa-facebook"><i class="sr-only">Facebook</i></span>
+                                  <a href="https://www.instagram.com/polescontracts/" class="d-flex align-items-center justify-content-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                                          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                      </svg>
+                                  </a>
+                                  <a href="https://g.page/r/CdFeqc66zQM2EAE" class="d-flex align-items-center justify-content-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-google" viewBox="0 0 16 16">
+                                          <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                                      </svg>
+                                  </a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+          <div class="container">
+              <a class="navbar-brand" href="index.html">Poles<span>Contracts</span></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="fa fa-bars"></span> Menu
+              </button>
+              <div class="collapse navbar-collapse" id="ftco-nav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                      <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                      <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <!-- END nav -->
+      <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+              <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+                  <div class="col-md-6 ftco-animate">
+                      <h2 class="subheading">Call us. or screw it your sellf</h2>
+                      <h1 class="mb-4">Let us do the dirty work, so you don't have to.</h1>
+                      <p><a href="contact.html" class="btn btn-primary mr-md-4 py-2 px-4">Learn more <span class="ion-ios-arrow-forward"></span></a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <section class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb">
+          <div class="overlay"></div>
+          <div class="container">
+              <div class="row d-md-flex justify-content-center">
+                  <div class="col-md-12">
+                      <div class="wrap-appointment bg-white d-md-flex pl-md-4 pb-5 pb-md-0">
+                          <form action="https://lacziostr.getform.com/lwj3z" class="appointment w-100">
+                              <div class="row justify-content-center">
+
+                                  <div class="form-group py-md-4 py-2 px-4 px-md-0">
+                                      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+                                          <div class="container">
+
+
+
+                                          </div>
+                                  </div>
+                                  <div class="col-12 col-md d-flex align-items-center">
+                                      <div class="form-group py-md-4 py-2 px-4 px-md-0">
+                                          <label for="name">Phone number</label></p>
+                                          <h1><strong>(+44) 7702014783</strong></h1></p><a href="tel:07702014783"> Click to call us now.</a>
+
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-md d-flex align-items-center">
+                                      <div class="form-group py-md-4 py-2 px-4 px-md-0">
+
+                                          <div class="form-field">
+                                              <div class="select-wrap">
+
+                                              </div>
+                                          </div>
+                                          <div class="col-12 col-md d-flex align-items-center align-items-stretch">
+                                              <div class="form-group py-md-4 py-2 px-4 px-md-0 d-flex align-items-stretch bg-primary">
+                                                  <input type="submit" value="Make an Appointment" class="btn btn-primary py-3 px-4">
+                                              </div>
+                                          </div>
+                                      </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="ftco-section ftco-no-pt ftco-no-pb">
+          <div class="container">
+              <div class="row d-flex no-gutters">
+                  <div class="col-md-6 d-flex">
+                      <div class="img d-flex align-items-center justify-content-center py-5 py-md-0" style="background-image:url(images/about.jpg);">
+                          <div class="time-open-wrap">
+                              <div class="desc p-4">
+                                  <h2>Business Hours</h2>
+                                  <div class="opening-hours">
+                                      <h4>Opening Days:</h4>
+                                      <p class="pl-3">
+                                          <span><strong>Monday – Friday:</strong> 9am to 5 pm</span>
+                                          <span><strong>Saturday :</strong> 9am to 1 pm</span>
+                                      </p>
+                                      <h4>Vacations:</h4>
+                                      <p class="pl-3">
+                                          <span>All Sunday Days</span>
+                                          <span>All Official Holidays</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="desc p-4 bg-secondary">
+                                  <h3 class="heading">For Emergency Cases</h3>
+                                  <span class="phone">(+44) 07702014783</span></p>
+                                  <a href="tel:07702014783">Click to call us now.</a>
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 pl-md-5 pt-md-5">
+                      <div class="row justify-content-start py-5">
+                          <div class="col-md-12 heading-section ftco-animate">
+                              <span class="subheading">Welcome to Poles Contracts</span>
+                              <h2 class="mb-4">Let's make you fresher than ever</h2>
+                              <p>
+                                  o introduce to you the necessary services of our company that was established in the year 1991. Today our company proves to be one of the most popular construction companies around the globe. Recently we got the information that your company needs certain services which we provide.
+
+                                  We provide all the materials and other services according to your requirements. Thus please give us this opportunity. Also, our company is licensed, and we provide all branded materials. So you can truly rely on us and trust us. Also, we assure you that we would provide timely services to you and will not allow you to backfire on us.
+
+                                  Once again, hoping to get positive feedback from you..
+                              </p>
+                          </div>
+                      </div>
+                      <div class="row ftco-counter py-5" id="section-counter">
+                          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+                              <div class="block-18">
+                                  <div class="text">
+
+                                  </div>
+                                  <div class="text">
+
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+                              <div class="block-18">
+                                  <div class="text">
+                                      <a href="tel:07702014783">Click to call us now.</a>
+                                  </div>
+                                  <div class="text">
+
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+                              <div class="block-18">
+                                  <div class="text">
+                                      poles contracts
+                                  </div>
+                                  <div class="text">
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- How we works -->
+      <section class="ftco-section">
+          <div class="container">
+              <div class="row justify-content-center pb-5 mb-3">
+                  <div class="col-md-7 heading-section text-center ftco-animate">
+                      <span class="subheading">Services</span>
+                      <h2>How We Works</h2>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6 col-lg-4 services ftco-animate">
+                      <div class="d-block d-flex">
+                          <div class="icon d-flex justify-content-center align-items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="yellow" class="bi bi-building" viewBox="0 0 16 16">
+                                  <path d="M12.496 8a4.491 4.491 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11c.027.2.04.403.04.61Z" />
+                                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-1 0a7 7 0 1 0-13.202 3.249l1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.49 4.49 0 0 1-1.592-.29L4.747 14.2A7 7 0 0 0 15 8Zm-8.295.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27.596-.894Z" />
+                              </svg>
+                              </svg>
+                          </div>
+                          <div class="media-body pl-3">
+                              <h3 class="heading">Handyman services</h3>
+                              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                              <p><a href="#" class="btn-custom">Read more</a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 services ftco-animate">
+                      <div class="d-block d-flex">
+                          <div class="icon d-flex justify-content-center align-items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="yellow" class="bi bi-clipboard2-heart-fill" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M10.058.501a.501.501 0 0 0-.5-.501h-2.98c-.276 0-.5.225-.5.501A.499.499 0 0 1 5.582 1a.497.497 0 0 0-.497.497V2a.5.5 0 0 0 .5.5h4.968a.5.5 0 0 0 .5-.5v-.503A.497.497 0 0 0 10.555 1a.499.499 0 0 1-.497-.499Z" />
+                                  <path fill-rule="evenodd" d="M4.174 1h-.57a1.5 1.5 0 0 0-1.5 1.5v12a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-12a1.5 1.5 0 0 0-1.5-1.5h-.642c.055.156.085.325.085.5V2c0 .828-.668 1.5-1.492 1.5H5.581A1.496 1.496 0 0 1 4.09 2v-.5c0-.175.03-.344.085-.5Zm3.894 5.482c1.656-1.673 5.795 1.254 0 5.018-5.795-3.764-1.656-6.69 0-5.018Z" />
+                              </svg>
+                          </div>
+                          <div class="media-body pl-3">
+                              <h3 class="heading">General Cleaning</h3>
+                              <p>Cleaning for every occasion. small, big, casual, every weak.</p>
+                              <p><a href="#" class="btn-custom">Read more</a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 services ftco-animate">
+                      <div class="d-block d-flex">
+                          <div class="icon d-flex justify-content-center align-items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="yellow" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                  <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                              </svg>
+                          </div>
+                          <div class="media-body pl-3">
+                              <h3 class="heading">Carpet Cleaning</h3>
+                              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                              <p><a href="#" class="btn-custom">Read more</a></p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 services ftco-animate">
+                      <div class="d-block d-flex">
+                          <div class="icon d-flex justify-content-center align-items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="yellow" class="bi bi-piggy-bank" viewBox="0 0 16 16">
+                                  <path d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z" />
+                                  <path fill-rule="evenodd" d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z" />
+                              </svg>
+                          </div>
+                          <div class="media-body pl-3">
+                              <h3 class="heading">Kitchen Cleaning</h3>
+                              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                              <p><a href="#" class="btn-custom">Read more</a></p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 services ftco-animate">
+                      <div class="d-block d-flex">
+                          <div class="icon d-flex justify-content-center align-items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="yellow" class="bi bi-tree" viewBox="0 0 16 16">
+                                  <path d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507z" />
+                              </svg>
+                          </div>
+                          <div class="media-body pl-3">
+                              <h3 class="heading">Garden Cleaning</h3>
+                              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                              <p><a href="#" class="btn-custom">Read more</a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 services ftco-animate">
+                      <div class="d-block d-flex">
+                          <div class="icon d-flex justify-content-center align-items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="yellow" class="bi bi-plug-fill" viewBox="0 0 16 16">
+                                  <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.083 2.083 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.922 1.922 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0z" />
+                              </svg>
+                          </div>
+                          <div class="media-body pl-3">
+                              <h3 class="heading">Electrical</h3>
+                              <p>Electric service available </p>
+                              <p><a href="services.html" class="btn-custom">Read more</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="ftco-section ftco-no-pt">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-lg-3 pr-md-4 pb-lg-0 pb-4">
+                      <div class="heading-section ftco-animate text-center text-lg-left">
+                          <span class="subheading">Team &amp; Staff</span>
+                          <h2>Our Team</h2>
+                          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                          <p><a href="#" class="btn btn-secondary">View All Staff</a></p>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 ftco-animate d-flex">
+                      <div class="staff">
+                          <div class="img-wrap d-flex align-items-stretch">
+                              <div class="img align-self-stretch" style="background-image: url(images/staff-1.jpg);"></div>
+                          </div>
+                          <div class="text pt-3 px-3 pb-4 text-center">
+                              <h3>Pawel Zielinski</h3>
+                              <span class="position mb-2">I'm an experienced electrician with a history of working in the consumer goods industry. Skilled in Manual Handling, Customer Service, Microsoft Word, HTML, and Microsoft Office. Strong operations professional with a Engineer's degree focused in Electrical and Electronics Engineering.</span>
+                              <div class="faded">
+                                  <ul class="ftco-social text-center">
+                                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                                      <li class="ftco-animate"><a href="https://www.facebook.com/pawelz2" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                                      <li class="ftco-animate"><a href="https://www.linkedin.com/in/pawelzielinskini/" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+
+                                  </ul>
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4 col-lg-3 ftco-animate d-flex">
+                      <div class="staff">
+                          <div class="img-wrap d-flex align-items-stretch">
+                              <div class="img align-self-stretch" style="background-image: url(images/staff-2.jpg);"></div>
+                          </div>
+                          <div class="text pt-3 px-3 pb-4 text-center">
+                              <h3>Ania Kruszewska</h3>
+                              <span class="position mb-2">I'm an experienced cleaner with a history of working in the domestic and industrial. Skilled in Manual Handling. Carry out heavy cleansing tasks and special projects. Follow all health and safety regulations. Perform aroutine inspection and maintenance activities. maintain supply rooms.</span>
+                              <div class="faded">
+                                  <ul class="ftco-social text-center">
+                                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                                  </ul>
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          </div>
+          </div>
+      </section>
+      <!-- happy customer-->
+      <section class="ftco-section testimony-section ftco-bg-dark">
+          <div class="container">
+              <div class="row justify-content-center pb-5 mb-3">
+                  <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
+                      <span class="subheading">Testimonies</span>
+                      <h2>Happy Customer</h2>
+                  </div>
+              </div>
+              <div class="row ftco-animate">
+                  <div class="col-md-12">
+                      <div class="carousel-testimony owl-carousel ftco-owl">
+                          <div class="item">
+                              <div class="testimony-wrap py-4">
+                                  <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-right"></span></div>
+                                  <div class="text">
+                                      <div class="d-flex align-items-center mb-4">
+
+                                          <div class="pl-3">
+
+                                          </div>
+                                      </div>
+                                      <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=10220188764261029&amp;id=1584436204" data-width="500" width="300" height="280" data-show-text="true"><blockquote cite="https://www.facebook.com/permalink.php?story_fbid=10220188764261029&amp;id=1584436204" class="fb-xfbml-parse-ignore"><p>Poles contracts was a wonderful experience. I am truly thankful I called for their services. They are not only professional at what they do but also reliable and dependable</p>Opublikowany przez <a href="#" role="button">Annę Szydlowską</a>&nbsp;<a href="https://www.facebook.com/permalink.php?story_fbid=10220188764261029&amp;id=1584436204">Poniedziałek, 24 stycznia 2022</a></blockquote></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <div class="testimony-wrap py-4">
+                                  <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-right"></span></div>
+                                  <div class="text">
+                                      <div class="d-flex align-items-center mb-4">
+
+                                          <div class="pl-3">
+
+                                          </div>
+                                      </div>
+                                      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Frein.edwards.9%2Fposts%2F1728043820739716&show_text=true&width=500" width="300" height="280" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <div class="testimony-wrap py-4">
+                                  <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-right"></span></div>
+                                  <div class="text">
+                                      <div class="d-flex align-items-center mb-4">
+
+                                          <div class="pl-3">
+
+                                          </div>
+                                      </div>
+                                      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fania.kruszewska.75%2Fposts%2F4989851927774478&show_text=true&width=500" width="300" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <div class="testimony-wrap py-4">
+                                  <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-right"></span></div>
+                                  <div class="text">
+                                      <div class="d-flex align-items-center mb-4">
+
+                                          <div class="pl-3">
+
+                                          </div>
+                                      </div>
+                                      <div class="fb-post" data-href="https://www.facebook.com/rein.edwards.9/posts/1728043820739716" data-width="500" width="300" height="280" data-show-text="true"><blockquote cite="https://www.facebook.com/rein.edwards.9/posts/1728043820739716" class="fb-xfbml-parse-ignore"><p>Poles Contracts has done a wonderful job each time they have done work on our home. Their employees are always on time,...</p>Opublikowany przez <a href="#" role="button">Reina Edwardsa</a>&nbsp;<a href="https://www.facebook.com/rein.edwards.9/posts/1728043820739716">Poniedziałek, 24 stycznia 2022</a></blockquote></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <div class="testimony-wrap py-4">
+                                  <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-right"></span></div>
+                                  <div class="text">
+                                      <div class="d-flex align-items-center mb-4">
+
+                                          <div class="pl-3">
+
+                                          </div>
+                                      </div>
+                                      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fania.kruszewska.75%2Fposts%2F4989851927774478&show_text=true&width=500" width="300" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <div class="testimony-wrap py-4">
+                                  <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-right"></span></div>
+                                  <div class="text">
+                                      <div class="d-flex align-items-center mb-4">
+
+                                          <div class="pl-3">
+
+                                          </div>
+                                      </div>
+                                      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fania.kruszewska.75%2Fposts%2F4989851927774478&show_text=true&width=500" width="300" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!--photo galerry-->
+      <section class="ftco-section">
+          <div class="container">
+              <div class="row justify-content-center pb-5 mb-3">
+                  <div class="col-md-12 heading-section  text-center ftco-animate">
+                      <span class="subheading">Our Project</span>
+                      <h2>We have done many latest  project</h2>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="work img d-flex align-items-center" style="background-image: url(robo/01/001.jpg);">
+                          <a href="robo/01/001.jpg" class="icon image-popup d-flex justify-content-center align-items-center fa fa-expand">
+
+                              <div class="desc w-100 px-4 text-center pt-5 mt-5">
+                                  <div class="text w-100 mb-3 mt-4">
+                                      <h2><a href="work-single.html">House Cleaning</a></h2>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="work img d-flex align-items-center" style="background-image: url(robo/01/003.jpg);">
+                          <a href="robo/01/003.jpg" class="icon image-popup d-flex justify-content-center align-items-center fa fa-expand">
+
+                              <div class="desc w-100 px-4 text-center pt-5 mt-5">
+                                  <div class="text w-100 mb-3 mt-4">
+                                      <h2><a href="work-single.html">Window Cleaning</a></h2>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="work img d-flex align-items-center" style="background-image: url(robo/01/004.jpg);">
+                          <a href="robo/01/004.jpg" class="icon image-popup d-flex justify-content-center align-items-center fa fa-expand">
+
+                              <div class="desc w-100 px-4 text-center pt-5 mt-5">
+                                  <div class="text w-100 mb-3 mt-4">
+                                      <h2><a href="work-single.html">Pool Cleaning</a></h2>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="work img d-flex align-items-center" style="background-image: url(robo/01/002.jpg);">
+                          <a href="robo/01/002.jpg" class="icon image-popup d-flex justify-content-center align-items-center fa fa-expand">
+
+                              <div class="desc w-100 px-4 text-center pt-5 mt-5">
+                                  <div class="text w-100 mb-3 mt-4">
+                                      <h2><a href="work-single.html">Office Cleaning</a></h2>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="work img d-flex align-items-center" style="background-image: url(images/work-5.jpg);">
+                          <a href="images/work-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center fa fa-expand">
+
+                              <div class="desc w-100 px-4 text-center pt-5 mt-5">
+                                  <div class="text w-100 mb-3 mt-4">
+                                      <h2><a href="work-single.html">Carpet Cleaning</a></h2>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="work img d-flex align-items-center" style="background-image: url(images/work-6.jpg);">
+                          <a href="images/work-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center fa fa-expand">
+
+                              <div class="desc w-100 px-4 text-center pt-5 mt-5">
+                                  <div class="text w-100 mb-3 mt-4">
+                                      <h2><a href="work-single.html">Garden Cleaning</a></h2>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="work img d-flex align-items-center" style="background-image: url(images/work-7.jpg);">
+                          <a href="images/work-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center fa fa-expand">
+                              <div class="desc w-100 px-4 text-center pt-5 mt-5">
+                                  <div class="text w-100 mb-3 mt-4">
+                                      <h2><a href="work-single.html"></a></h2>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="work img d-flex align-items-center" style="background-image: url(images/work-8.jpg);">
+                          <a href="images/work-8.jpg" class="icon image-popup d-flex justify-content-center align-items-center fa fa-expand">
+
+                              <div class="desc w-100 px-4 text-center pt-5 mt-5">
+                                  <div class="text w-100 mb-3 mt-4">
+                                      <h2><a href="work-single.html"></a></h2>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!--letest news-->
+      <section class="ftco-section">
+          <div class="container">
+              <div class="row justify-content-center pb-5 mb-3">
+                  <div class="col-md-7 heading-section text-center ftco-animate">
+                      <span class="subheading">News &amp; Blog</span>
+                      <h2>Latest News</h2>
+                  </div>
+              </div>
+              <div class="row d-flex">
+                  <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+                      <div class="blog-entry align-self-stretch">
+                          <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_1.jpg');">
+                          </a>
+                          <div class="text mt-3 px-4">
+                              <div class="posted mb-3 d-flex">
+                                  <div class="img author" style="background-image: url(images/person_1.jpg);"></div>
+                                  <div class="desc pl-3">
+                                      <span>Posted by Pawel Zielniski</span>
+                                      <span>03/02/2022</span>
+                                  </div>
+                              </div>
+                              <h3 class="heading"><a href="#">10 Tips to god CCTV</a></h3>
+                              <p>Get a right CCtv for ur needs.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+                      <div class="blog-entry align-self-stretch">
+                          <a href="flatpack.html" class="block-20 rounded" style="background-image: url('images/image_2.jpg');">
+                          </a>
+                          <div class="text mt-3 px-4">
+                              <div class="posted mb-3 d-flex">
+                                  <div class="img author" style="background-image: url(images/person_3.jpg);"></div>
+                                  <div class="desc pl-3">
+                                      <span>Posted by John doe</span>
+                                      <span>04 March 2020</span>
+                                  </div>
+                              </div>
+                              <h3 class="heading"><a href="flatpack.html">Tips for Flat-pack furniuture</a></h3>
+                              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+                      <div class="blog-entry align-self-stretch">
+                          <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_3.jpg');">
+                          </a>
+                          <div class="text mt-3 px-4">
+                              <div class="posted mb-3 d-flex">
+                                  <div class="img author" style="background-image: url(images/person_1.jpg);"></div>
+                                  <div class="desc pl-3">
+                                      <span>Posted by John doe</span>
+                                      <span>04 March 2020</span>
+                                  </div>
+                              </div>
+                              <h3 class="heading"><a href="#">10 Tips to clean your window</a></h3>
+                              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="ftco-section ftco-intro" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-md-8 text-center">
+                      <h2>Together we will explore new things</h2>
+                      <a href="contact.html" class="icon-video d-flex align-items-center justify-content-center"><span class="fa fa-play"></span></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="ftco-section bg-light">
+          <div class="container">
+              <div class="row justify-content-center pb-5 mb-3">
+                  <div class="col-md-7 heading-section text-center ftco-animate">
+                      <span class="subheading mb-3">Price &amp; Plans</span>
+                      <h2>Choose Your Perfect Plans</h2>
+                  </div>
+              </div>
+              <!--instagram-->
+              <div class="row">
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="block-7">
+                          <div class="text-center">
+                              <div class="icon d-flex align-items-center justify-content-center"><span class="fa flaticon-tap"></span></div>
+                              <h4 class="heading-2">Myjobquote</h4>
+                              <a href="https://www.instagram.com/polescontracts/"><img src="https://th.bing.com/th/id/R.8224836a6169b5fb1120109040e92d96?rik=NW2xHtnLUhw6vg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f12%2fInstagram-Verified-Badge-PNG-Transparent-Image.png&ehk=qCuv8aE9HyzBc%2fiaSXOp4gV1MC9ParR6NsuLhkzxw84%3d&risl=&pid=ImgRaw&r=0" width="180" height="180"></a>
+                          </div>
+                      </div>
+                  </div>
+                  <!--facebok badge-->
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="block-7">
+                          <div class="text-center">
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                  </svg></span>
+                              </div>
+                              <h4 class="heading-2">Myjobquote</h4>
+                              <a href="https://g.page/r/CdFeqc66zQM2EBA"><img src="http://gastownbusinesscollege.ca/wp-content/uploads/2015/11/follow-us-facebook-ybo-canada.png" width="220" height="180"></a>
+
+
+
+
+
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Google badge-->
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="block-7">
+                          <div class="text-center">
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-google" viewBox="0 0 16 16">
+                                      <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                                  </svg>
+                              </div>
+                              <h4 class="heading-2">Google</h4>
+                              <a href="https://g.page/r/CdFeqc66zQM2EBA"><img src="https://d10cq78zmnjvsx.cloudfront.net/images/marketing-site/logo-google-round-color.png" width="180" height="180"></a>
+
+
+
+
+
+                          </div>
+                      </div>
+                  </div>
+                  <!-- myjobquote badge-->
+                  <div class="col-md-6 col-lg-3 ftco-animate">
+                      <div class="block-7">
+                          <div class="text-center">
+                              <div class="icon d-flex align-items-center justify-content-center"><span class="fa flaticon-tap"></span></div>
+                              <h4 class="heading-2">Myjobquote</h4>
+                              <a href="https://g.page/r/CdFeqc66zQM2EBA"><img src="https://www.myjobquote.co.uk/assets/images/badges/badge-medium-blue.png" width="180" height="180"></a>
+                          </div>
+                      </div>
+                  </div>
+      </section>
+
+
+      <footer class="footer ftco-section">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                      <h2 class="footer-heading">Social Media</h2>
+
+                      <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
+                          <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                          <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                          <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-4 mb-md-0 ftco-animate">
+
+                      <h2 class="footer-heading">Latest News</h2>
+                      <div class="block-21 mb-4 d-flex">
+                          <a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
+                          <div class="text">
+                              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                              <div class="meta">
+                                  <div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
+                                  <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="block-21 mb-4 d-flex">
+                          <a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
+                          <div class="text">
+                              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                              <div class="meta">
+                                  <div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
+                                  <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0 ftco-animate">
+                      <h2 class="footer-heading">Quick Links</h2>
+                      <ul class="list-unstyled">
+                          <li><a href="index.html" class="py-1 d-block">Home</a></li>
+                          <li><a href="about.html" class="py-1 d-block">About</a></li>
+                          <li><a href="services.html" class="py-1 d-block">Services</a></li>
+                          <li><a href="pricing.html" class="py-1 d-block">Works</a></li>
+                          <li><a href="blog.html" class="py-1 d-block">Blog</a></li>
+                          <li><a href="contact.html" class="py-1 d-block">Contact</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                      <h2 class="footer-heading">Have a Questions?</h2>
+                      <div class="block-23 mb-3">
+
+                          <ul>
+                              <li class="ftco-animate"><span class="icon fa fa-map-marker"></span><span class="text">BT36 Newtownabbey</span></li>
+                              <li class="ftco-animate"><a href="#"><span class="icon fa fa-phone"></span><span class="text">+44 07702014783</span></a></li>
+                              <li class="ftco-animate"><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">paul@polescontracts.com</span></a></li>
+                          </ul>
+                          </li>
+                      </div>
+
+                  </div>
+              </div>
+
+              <div class="row mt-5">
+                  <div class="col-md-12 text-center">
+
+                      <p class="copyright">
+                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                          Copyright &copy;
+                          <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/scrollax.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+      <script src="js/google-map.js"></script>
+      <script src="js/main.js"></script>
+
+  </body>
+</html>
