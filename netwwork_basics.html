@@ -1,0 +1,191 @@
+<html>
+    <link rel="stylesheet" href="styles.css"> 
+    <body>
+        <ul>
+            <li><a href="./Index.html">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="./netwwork_basics.html">Networking</a>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+          </ul>
+            <div class="header">
+                <h2>Laczi.Ostr</h2>
+            </div>
+
+            <div class="row">
+                <div class="leftcolumn">
+                <div class="card">
+                    <h2>TITLE HEADING</h2>
+                    <h5>Title description, Dec 7, 2017</h5>
+                    <div class="fakeimg" style="height:200px;">Image</div>
+                    <h1>Networking Esentials</h1>  
+
+    <h2>Introduction</h2>
+
+    <p>Hi and welcome hir is my work in prgres. In this chapter I will include My notes and underlines from books. NOW no more talking straight to buissnes</p>
+	<h2>Networking protocols and Architecture</h2>
+
+	    <p>1. <strong>Ethernet -</strong>Network interface </p> 
+
+	    <p>2. <strong>IP -</strong> From source to detanation </p> 
+
+	    <p>3. <strong>TCP -</strong> Checks is all there  </p>
+
+	    <p>4. <strong>HTTP -</strong> Aplicanion by software </p>
+
+ 
+
+	<h2>Tcp/IP Model </h2>
+
+	    <p>4. Aplication Represents data to the end user </p>
+
+	    <p>3. Transport Suports Comunication Btwen Devices </p>
+
+	    <p>2. Internet Determent best path thru network  </p>
+
+	    <p>1. Network acces Controls Hardware </p>
+
+ 
+
+    <h3>The Protocols stack  </h3>
+
+	    <p>Sucesfull comunication between host and Clijent rewuires interaction between a number of protocols and implemented 
+            in software and are implemented in softwre 					
+            and hardware that are instaled on each device. That interaction Betwen protocols and a single device can be 
+            ilustrated as a protocol stack. 
+        </p>
+
+ 
+
+	<h2>The OSI Model  </h2>
+
+	    <p>
+            7. <strong>Aplication -</strong> Contains protocols used for proces to proces Comunication. The aplication layer is 
+            the level of the protocol hierarchy where user-accesed network proces reside. In this text, a TCP/IP aplication is any 
+            network process that occures above the transport layer. This include all of the processesthat users directly interact 
+            with, as well as other processes at this level that users are not nesesary aware of.
+        </p>
+
+	    <p>6. <strong>Presentation</strong> Provides for comon representation of the data transfered betwen aplication layer 
+            and services. For cooperating applications to echchange data, they must agre about how data is represented. In OSI 
+            model , this layer provides standard data presentation routines. This function is frequwntly hendled within the 
+            apliccation in TCP/IP, though increasingly TCP/IP protocols such as XDR and MIME Perform this function.
+        </p>
+
+	    <p>
+            5. <strong>Session</strong> Provides services to the presentation layer to organize and menage data exchane. As with 
+            presentation Layer, the session Layer is not identifiable as separate layer in the TCP/IP protocol hierarchy. 
+            The OSI session Layer menages the sessions (connection) between cooperating applications. In TCP /IP, this funcion 
+            largly occures in the Tranport Layer, and the term 'session' is not used. For TCP/IP, The terms socket and port are 
+            used to describe the path over which cooperating applications communicate. 
+        </p>
+
+	    <p>
+            4. <strong>Transport</strong> Defines services to segment , transfer and reasamble the dat for individual comunication 
+            betwen the end devices. Much of our discusion of TCP/IP is directed to the protocols that occur in the Transport 
+            Layer. The Transport Layer in the OSI reference model guarantees that reciver gets the data exactly as it was sent. 
+            In the TCP/IP this function is preformed by the Transmission Control Protocol (TCP). However, TCP/IP Offers a second 
+            Transport Layer service, User datagram protocol (UDP), that does not preform by the end-to end realability checks. 
+        
+        </p>
+
+	    <p>
+            3. <strong>Network</strong> Provide Servics to exchange the idividual pices od data over the netwoerk betwen individual end divices.
+            The Network Layer menages connection across the network and isolates the uper layer protocols from the details of underlaying network. The Internet
+            Protocol (IP), wich isolates the uper layers from the underlayin nwtwork and handles the addressing and delivery of data, is usually
+            described as TCP/IP Network Layer.
+        </p>
+
+	    <p>
+            2. <strong>Data Link</strong>  Laer protocols describe methods for exchange data frames betwen devices over a common media. The reliable
+            Delivery of data across the underlying physical network is handled by the data link layer. TCP/IP rarely creates protocols in the Data Link Layer.
+            Most RFCs that relate to the Data Link Layer discuss how IP can make use of existing data.
+        </p>
+        <p>
+            1.<strong>Pchysical</strong> protocol describe mechanical and electrical funcional proceddural means to active sustane and deactive physical connection
+            for bit Transmission to and from network device.The Phisical Layer defines the characteristics of the hardware nedded to carry the data trannsmission 
+            signal. Features such as voltage levels, and the number and location of interface pins, are defined in this layer. Examples of standards at the Physical
+            Layer are interface connectors such as RS232C and V.35 and standards for local area natwork wiring such as IEEE 802.3. TCP/IP does not define physical 
+            standards-it make use of existing standards. 
+        </p>
+       <p>
+        The terminology of the OSI reference model helps us describe TCP/IP, but to fully understand it, we must use an Architectural model that more closely matches 
+        the structure of TCP/IP.
+       </p>
+
+       <img src="./img/osi_model.jpg" alt="Girl in a jacket" width="500" height="600">
+             
+       <h1>Ethernet</h1>
+       <p>
+        Ther is no oficial local are networking standard but ther is one more common then others. Ethernet protocol define how data is formated and how is transmited
+        over the wired network. The Ethernet standard specifies protocol that operate at layer 1 and layer 2 of the OSi model.
+       </p>
+       <h1>Ethernet Addresing</h1>
+ 	<p>
+		All comunication requires a way to identyfy the suorce and destynation.
+	</p>
+	<p>
+		Media Access Control(Mac)- Done by NIC card level.Checking mac address without checking incapsulaed data.
+	</p>
+	<p>
+	
+	</p>
+                </div>
+            
+                </div>
+                <div class="rightcolumn">
+                <div class="card">
+                <h2>Networking esentials</h2>
+                    <p><a href="./network_basic/Networking_protocols.html">Networking protocols and Architecture</a></p>
+                    <p><a href="#news">Tcp/IP Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>  
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">The OSI Model</a></p>
+
+                </div>
+                <div class="card">
+                    <h3>Popular Post</h3>
+                    <div class="fakeimg">Image</div><br>
+                    <div class="fakeimg">Image</div><br>
+                    <div class="fakeimg">Image</div>
+                </div>
+                <div class="card">
+                    <h3>Follow Me</h3>
+                    <p>Some text..</p>
+                </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <h2>Footer</h2>
+            </div>
+	
+    </body>
+
+
+</html>
