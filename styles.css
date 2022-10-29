@@ -5,8 +5,9 @@
   body {
     font-family: Arial;
     padding: 20px;
-    background: #f1f1f1;
-    width: 100%
+    background: #1c1b40;
+    margin: auto;
+    max-width: 1290px
   }
   
   /* Header/Blog Title */
@@ -14,7 +15,7 @@
     padding: 30px;
     font-size: 40px;
     text-align: center;
-    background: white;
+    background: rgb(98, 94, 190);
   }
 
   /* Header/Blog Title */
@@ -22,17 +23,19 @@
     padding: 15px;
     font-size: 9px;
     text-align: left;
-    background: rgb(157, 133, 241);
+    background: rgba(76, 54, 162, 0.496);
   } 
   /* Create two unequal columns that floats next to each other */
   /* Left column */
   .leftcolumn {
     float: left;
+    color: white;
     width: 75%;
   }
   
   /* Right column */
   .rightcolumn {
+    color: white;
     float: left;
     width: 25%;
     padding-left: 10px;
@@ -40,14 +43,14 @@
   
   /* Fake image */
   .fakeimg {
-    background-color: rgb(120, 223, 116);
+    background-color: rgb(0, 0, 0);
     width: 40%;
     padding: 20px;
   }
   
   /* Add a card effect for articles */
   .card {
-    background-color: white;
+    background-color: rgb(11, 10, 10);
     padding: 20px;
     margin-top: 20px;
   }
@@ -61,10 +64,17 @@
   
   /* Footer */
   .footer {
+    color: white;
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #0a0a0a;
     margin-top: 20px;
+  }
+  .arti {
+    color: white;
+    padding: 20px;
+    background: #0a0a0a;
+    max-width: 900px;
   }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */

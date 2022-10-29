@@ -1,18 +1,27 @@
 <html>
+<head>
+        <title>Laczi.ostr</title>
+
     <link rel="stylesheet" href="styles.css"> 
-    <body>
+</head>
+<body>
+        <!--menu on top of page-->
         <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#news">News</a></li>
+            <li><a href="#news">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-                <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="./netwwork_basics.html">Networking</a>
-            <li style="float:right"><a class="active" href="#about">About</a></li>
-          </ul>
+            <a href="javascript:void(0)" class="dropbtn">Learning</a>
+            <div class="dropdown-content">
+            <a href="#">HTML/css</a>
+            <a href="python_intro.html">Python</a>
+            <a href="./netwwork_basics.html">Networking</a>
+            <a href="#">Hacking</a>
+            <li style="float:right"><a class="active" href="about.html">About Me</a></li>
+        </ul>	
+<!--end of menu-->
+
+											                                             <!--Baner -->
             <div class="header">
                 <h2>Laczi.Ostr</h2>
             </div>
@@ -87,8 +96,8 @@
 
 	    <p>
             3. <strong>Network</strong> Provide Servics to exchange the idividual pices od data over the netwoerk betwen individual end divices.
-            The Network Layer menages connection across the network and isolates the uper layer protocols from the details of underlaying network. The Internet
-            Protocol (IP), wich isolates the uper layers from the underlayin nwtwork and handles the addressing and delivery of data, is usually
+            The Network Layer menages connection across the network and isolates the uper layer protocols from the details of underlaying network. 
+            The Internet Protocol (IP), wich isolates the uper layers from the underlayin nwtwork and handles the addressing and delivery of data, is usually
             described as TCP/IP Network Layer.
         </p>
 
@@ -98,14 +107,18 @@
             Most RFCs that relate to the Data Link Layer discuss how IP can make use of existing data.
         </p>
         <p>
-            1.<strong>Pchysical</strong> protocol describe mechanical and electrical funcional proceddural means to active sustane and deactive physical connection
+            1.<strong>Pchysical</strong> protocol describe mechanical and electrical funcional proceddural means to active sustane and deactive physical 
+            connection
             for bit Transmission to and from network device.The Phisical Layer defines the characteristics of the hardware nedded to carry the data trannsmission 
-            signal. Features such as voltage levels, and the number and location of interface pins, are defined in this layer. Examples of standards at the Physical
-            Layer are interface connectors such as RS232C and V.35 and standards for local area natwork wiring such as IEEE 802.3. TCP/IP does not define physical 
+            signal. Features such as voltage levels, and the number and location of interface pins, are defined in this layer. Examples of standards at the 
+            Physical
+            Layer are interface connectors such as RS232C and V.35 and standards for local area natwork wiring such as IEEE 802.3. TCP/IP does not define 
+            physical 
             standards-it make use of existing standards. 
         </p>
        <p>
-        The terminology of the OSI reference model helps us describe TCP/IP, but to fully understand it, we must use an Architectural model that more closely matches 
+        The terminology of the OSI reference model helps us describe TCP/IP, but to fully understand it, we must use an Architectural model that more 
+        closely matches 
         the structure of TCP/IP.
        </p>
 
@@ -113,7 +126,8 @@
              
        <h1>Ethernet</h1>
        <p>
-        Ther is no oficial local are networking standard but ther is one more common then others. Ethernet protocol define how data is formated and how is transmited
+        Ther is no oficial local are networking standard but ther is one more common then others. Ethernet protocol define how data is formated and how 
+        is transmited
         over the wired network. The Ethernet standard specifies protocol that operate at layer 1 and layer 2 of the OSi model.
        </p>
        <h1>Ethernet Addresing (MAC)</h1>
@@ -126,16 +140,46 @@
 	
 	<h1>Encapsulation</h1>
     <p>
-        When sending a letter writer uses an accepted format to ensure that letter is delivered and understood by the recipient. The same way message is send over a computer 
+        When sending a letter writer uses an accepted format to ensure that letter is delivered and understood by the recipient. The same way message is 
+        send over a computer 
         network.  
 	</p>
     <p>
-        The process of placing one message format (the letter) inside another message format (the envelope) is called encapsulation. Message is encapsulated in specific format, 
+        The process of placing one message format (the letter) inside another message format (the envelope) is called encapsulation. Message is encapsulated 
+        in specific format, 
         called frame.   
     </p>
     <h1>Ethernet Frame</h1>
     <p>
         The Ethernet protocol standard define many aspects of network communication including frame format, size, timing and encoding.      
+    </p>
+    <h1>Hierarchical Network Design </h1>
+    <h2>Hierarchical addresses </h2>
+    <p>
+        Physical address: On Host the Mac address does not change it is physically assigned to the host NIC The physical address remains the same.
+        Logical Address is signed logically based where the host is located. The IP address or network address is assigned to each host by a network administrator based on local network.
+        Both the physical MAC and logical IP addresses are required on hierarchical network to communicate. 
+    </p>
+    <h2>Hierarchical Layers.</h2>
+            <p><strong>Access Layer</strong>-This layer provides communications to hosts in local ethernet networks.</p>
+            <p><strong>Distribution layer</strong>- This Layer interconnects the smaller local networks.</p>
+            <p><strong>Core layer</strong>-This layer provides high-speed connection between distribution layer devices. 
+                    With this design, there is no need for logical address in scheme that can identify location of a host.</p>
+    <h2>The access layers</h2>
+    <p>
+        This is basic level of the network it is part of network in which people gain access to other hosts and to shared files and printers. This layer provides the first layer of networking. 
+    </p>
+    <h2>Ethernet swich </h2>
+    <p>
+        An ethernet swich is device used on the access layer when host sends a message to another host connected to the same network	, the swich accepts and decodes the frames to read the physical (MAC) address portion of the message.
+    </p>
+    <h2>The MAC address table </h2>
+    <p>
+        A swich build MAC address table by examining the source MAC address of each frame that is sent between hosts. When new host sends a message or responds to a flooded message, the swich immediately learns MAC address and port to which is connected. The table is dynamically updated. 
+
+Functions preformed at this level include encapsulation of IP datagrams into the frames transmitted by network and mapping of IP addresses to the physical addresses used by the network.
+RFC 894 (more research is required old rfc )
+
     </p>
                 </div>
             
@@ -146,7 +190,7 @@
                     <p><a href="./network_basic/Networking_protocols.html">Networking protocols and Architecture</a></p>
                     <p><a href="#news">Tcp/IP Model</a></p>
                     <p><a href="#contact">The OSI Model</a></p>
-                    <p><a href="#contact">The OSI Model</a></p>
+                    <p><a href="#contact">LAN</a></p>
                     <p><a href="#contact">The OSI Model</a></p>
                     <p><a href="#contact">The OSI Model</a></p>
                     <p><a href="#contact">The OSI Model</a></p>
